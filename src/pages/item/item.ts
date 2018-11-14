@@ -18,7 +18,8 @@ import {CartPage} from "../cart/cart";
 export class ItemPage {
   item: any;
   quantity = 1;
-
+  opt_required;
+  opt_optional;
   // private storage: Storage
   constructor(public nav: NavController, public itemService: ItemService, public toastCtrl: ToastController, public navParams: NavParams, public storage: Storage) {
     // set data for item

@@ -21,14 +21,8 @@ export class SettingsPage {
     country_code: 66,
     phone: '123456789'
   };
-
+  
   constructor(public nav: NavController, public cdRef: ChangeDetectorRef) {
 
-  }
-
-  change(value, limit){
-    //manually launch change detection
-    this.cdRef.detectChanges();
-    this.phone = value.length > limit ? value.substring(0,limit) : value;
   }
 }

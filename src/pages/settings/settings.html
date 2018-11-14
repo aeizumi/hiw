@@ -36,7 +36,14 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-label stacked>GENDER</ion-label>
+        <!-- <ion-label stacked>GENDER</ion-label> -->
+        <ion-item>
+          <ion-label>Gender</ion-label>
+          <ion-select [(ngModel)]="user.gender">
+            <ion-option value="f">Female</ion-option>
+            <ion-option value="m">Male</ion-option>
+          </ion-select>
+        </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -47,11 +54,13 @@
     <ion-row>
       <ion-col>
         <ion-label stacked>WEIGHT(kg)</ion-label>
+        <ion-input type="text" [(ngModel)]="user.weight"></ion-input>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <ion-label stacked>HEIGHT(cm)</ion-label>
+        <ion-input type="text" [(ngModel)]="user.height"></ion-input>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -67,12 +76,13 @@
         </ion-select>
       </ion-col>
       <ion-col col-9>
-        <ion-input type="number" max="9" [(ngModel)]="user.phone" (ngModelChange)="change($event,9)"></ion-input>
+        <ion-input type="text" maxlenght="9" [(ngModel)]="user.phone"></ion-input>
       </ion-col>
     </ion-row>
   </ion-grid>
+</ion-content>
 
-  <ion-content class="light-bg">
+<ion-content class="light-bg">
     <div padding>
       ADDRESS INFO
     </div>

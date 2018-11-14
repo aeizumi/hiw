@@ -4,8 +4,8 @@ import {ViewChild} from '@angular/core';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 
-import {IonicStorageModule} from '@ionic/storage';
-import {ChangeDetectorRef} from '@angular/core';
+// import {IonicStorageModule} from '@ionic/storage';
+// import {ChangeDetectorRef} from '@angular/core';
 // import pages
 import {WelcomePage} from "../pages/welcome/welcome";
 // end import pages

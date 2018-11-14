@@ -31,19 +31,24 @@
     </ion-item>
   </ion-list>
 
-  <div class="light-bg" padding>ADD-ONS</div>
+  <!-- <div class="light-bg" padding>ADD-ONS</div>
+      <ion-item *ngFor="let opt of item.options.optional">
+        <ion-option>{{ opt.name }}</ion-option>
+      </ion-item>
+    </ion-select> -->
+<div class="light-bg" padding>ADD-ONS</div>
   <ion-list>
-    <ion-item *ngFor="let opt of item.options.optional">
+    <ion-item *ngFor="let opt of item.options.optional; let i=index" >
       <ion-label>{{ opt.name }}</ion-label>
       <span item-right>${{ opt.price }}</span>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox [(ngModel)]="opt_optional"></ion-checkbox>
     </ion-item>
   </ion-list>
 
   <!-- add note -->
   <div class="light-bg" padding>SPECIAL INSTRUCTIONS</div>
   <div padding>
-    <ion-textarea type="text" placeholder="Add a note (extra sauce, no onions, etc.)"></ion-textarea>
+    <ion-textarea type="text" [(ngModel)]="description" name="description" placeholder="Add a note (extra sauce, no onions, etc.)"></ion-textarea>
   </div>
 
   <!-- quantity button -->
