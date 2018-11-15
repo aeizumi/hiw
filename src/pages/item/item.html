@@ -41,7 +41,7 @@
     <ion-item *ngFor="let opt of item.options.optional; let i=index" >
       <ion-label>{{ opt.name }}</ion-label>
       <span item-right>${{ opt.price }}</span>
-      <ion-checkbox [(ngModel)]="opt_optional"></ion-checkbox>
+      <ion-checkbox></ion-checkbox> <!-- [(ngModel)]="opt_optional" -->
     </ion-item>
   </ion-list>
 

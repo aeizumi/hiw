@@ -36,9 +36,8 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <!-- <ion-label stacked>GENDER</ion-label> -->
+        <ion-label stacked>GENDER</ion-label>
         <ion-item>
-          <ion-label>Gender</ion-label>
           <ion-select [(ngModel)]="user.gender">
             <ion-option value="f">Female</ion-option>
             <ion-option value="m">Male</ion-option>
@@ -49,15 +48,16 @@
     <ion-row>
       <ion-col>
         <ion-label stacked>BIRTH DAY</ion-label>
+        <ion-item>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="user.birthday"></ion-datetime>
+        </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <ion-label stacked>WEIGHT(kg)</ion-label>
         <ion-input type="text" [(ngModel)]="user.weight"></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
+      </ion-col>    
       <ion-col>
         <ion-label stacked>HEIGHT(cm)</ion-label>
         <ion-input type="text" [(ngModel)]="user.height"></ion-input>
@@ -80,34 +80,32 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-</ion-content>
-
-<ion-content class="light-bg">
-    <div padding>
-      ADDRESS INFO
-    </div>
-    <ion-grid class="white-bg" padding-left padding-right padding-bottom>
-      <ion-row>
-        <ion-col>
-          <ion-label stacked>ADDRESS</ion-label>
-          <ion-input type="textarea" [(ngModel)]="user.address"></ion-input>
-        </ion-col>
-        </ion-row>
-        <ion-row>
-        <ion-col>
-          <ion-label stacked>SUBDISTRICT</ion-label>
-          <ion-input type="text" [(ngModel)]="user.subdistrict"></ion-input>
-        </ion-col>
-        <ion-col>
-          <ion-label stacked>DISTRICT</ion-label>
-          <ion-input type="text" [(ngModel)]="user.district"></ion-input>
-        </ion-col>
-        </ion-row>
-        <ion-row>
-        <ion-col>
-          <ion-label stacked>ZIPCODE</ion-label>
-          <ion-input type="number" max="5" required [(ngModel)]="user.zipcode"></ion-input>
-        </ion-col>
+  <div padding>
+    ADDRESS
+  </div>
+  <ion-grid class="white-bg" padding-left padding-right padding-bottom>
+    <ion-row>
+      <ion-col>
+        <ion-label stacked>ADDRESS</ion-label>
+        <ion-input type="textarea" [(ngModel)]="user.address"></ion-input>
+      </ion-col>
       </ion-row>
-    </ion-grid>
+      <ion-row>
+      <ion-col>
+        <ion-label stacked>SUBDISTRICT</ion-label>
+        <ion-input type="text" [(ngModel)]="user.subdistrict"></ion-input>
+      </ion-col>
+      <ion-col>
+        <ion-label stacked>DISTRICT</ion-label>
+        <ion-input type="text" [(ngModel)]="user.district"></ion-input>
+      </ion-col>
+      </ion-row>
+      <ion-row>
+      <ion-col>
+        <ion-label stacked>ZIPCODE</ion-label>
+        <ion-input type="number" max="5" required [(ngModel)]="user.zipcode"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button block color="secondary">SAVE</button>
 </ion-content>
