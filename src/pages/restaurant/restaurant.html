@@ -40,7 +40,7 @@
       <ion-item text-wrap *ngFor="let item of cat.items" (click)="viewItem(item.id)">
         <span>{{ item.name }}</span>
         <p>{{ item.desc }}</p>
-        <p>${{ item.price }}</p>
+        <p>฿{{ item.price }}</p>
         <ion-thumbnail item-right>
           <img src="{{ item.thumb}}" alt="">
         </ion-thumbnail>

@@ -5,18 +5,18 @@ export let ORDERS = [
     items: [
       {
         id: 1,
-        name: "Strawberry Cheesecake",
-        quantity: 1,
-        price: 20
+        name: "Grilled Fish with Chickpea Salad",
+        quantity: 2,
+        price: 300
       },
       {
         id: 2,
-        name: "Dark Chocolate",
-        quantity: 1,
-        price: 8
+        name: "Salmon Fried Rice",
+        quantity: 2,
+        price: 300
       }
     ],
     delivered_time: "Today 10:00PM",
-    total: "28"
-  },
+    total: "600"
+  }
 ]

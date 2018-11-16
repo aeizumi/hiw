@@ -3,11 +3,11 @@ export let CART = {
   items: [
     {
       id: 1,
-      name: "Beet Lox Sandwich",
-      price: 14,
-      quantity: 2
+      name: "Grilled Chicken Salad",
+      price: 100,
+      quantity:2
     }
   ],
   deliveryFee: 58,
-  total: 24
+  total: 262
 }

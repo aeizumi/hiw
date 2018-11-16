@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="white">
-    <ion-title>Home</ion-title>  
+    <ion-title>Home</ion-title>
     <ion-buttons end>
       <button ion-button (click)="goToCart()">
         <ion-icon name="ios-basket-outline"></ion-icon>
@@ -23,7 +23,7 @@
 
   <!--list of last items-->
   <div padding>
-  <h5>New Dishes</h5>
+  <h5>Recommended Dishes</h5>
   <div>
     <ion-list class="list-full-border">
       <ion-item text-wrap *ngFor="let item of items" (click)="viewItem(item.id)">
@@ -32,7 +32,7 @@
         </ion-thumbnail>
         <span>{{ item.name }}</span>
         <!-- <p>{{ item.desc }}</p> -->
-        <p>${{ item.price }}</p>
+        <p>฿{{ item.price }}</p>
       </ion-item>
     </ion-list>
   </div>
